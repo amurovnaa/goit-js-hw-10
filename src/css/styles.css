@@ -1,9 +1,160 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
 @import url('./reset.css');
-@import url('./base.css');
+body {
+  margin-left: 156px;
+  margin-top: 36px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+.page-link {
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95px;
+  height: 40px;
+  background-color: #4e75ff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.page-link:hover,
+.page-link:focus {
+  background-color: #6c8cff;
+}
+/* ---------------TIMER STYLES------------- */
+.timer {
+  display: flex;
+  column-gap: 24px;
+  margin-bottom: 100px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.value {
+  font-size: 40px;
+}
+.label {
+  font-size: 16px;
+}
+#datetime-picker {
+  width: 272px;
+  font-size: 16px;
+  color: #2e2f42;
+  padding-inline: 16px;
+  padding-block: 8px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  margin-right: 8px;
+}
+#datetime-picker:hover {
+  color: #2e2f42;
+  border: 1px solid #000;
+}
+#datetime-picker:active {
+  color: #000;
+  border: 1px solid #4e75ff;
+}
+#datetime-picker:disabled {
+  color: #808080;
+  background-color: #fafafa;
+  border: 1px solid #808080;
+}
+
+button[data-start] {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 32px;
+  border: none;
+}
+button[data-start]:hover {
+  background: #6c8cff;
+}
+button[data-start]:disabled {
+  background: #cfcfcf;
+  color: #989898;
+}
+
+/* ---------------SNACKBAR STYLES------------- */
+.form {
+  margin-bottom: 100px;
+  max-width: 360px;
+}
+form > label {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin-bottom: 16px;
+}
+form > label > input {
+  border-radius: 4px;
+  border: 1px solid #808080;
+  height: 40px;
+  padding-block: 8px;
+  padding-inline: 16px;
+  font-size: 16px;
+}
+form > label > input:hover {
+  border: 1px solid #000;
+}
+form > label > input:focus {
+  border: 1px solid #4e75ff;
+  outline: none;
+}
+form > label > input:active {
+  border: 1px solid #4e75ff;
+}
+fieldset {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  padding-top: 24px;
+  padding-inline: 28px;
+}
+fieldset:hover {
+  border: 1px solid #000;
+}
+fieldset:active {
+  border: 1px solid #000;
+}
+fieldset > label {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  padding-inline: 20px;
+}
+
+fieldset input[type='radio'] {
+  width: 20px;
+  height: 20px;
+}
+button[type='submit'] {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  width: 100%;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  padding-block: 8px;
+  height: 40px;
+}
+button[type='submit']:hover,
+button[type='submit']:focus {
+  background-color: #6c8cff;
+}
