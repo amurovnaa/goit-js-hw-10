@@ -39,6 +39,7 @@ form.addEventListener('submit', event => {
     .then(() => {
       showPopup({
         ...popupOption,
+        title: 'OK',
         message: `Fulfilled promise in ${userValue}ms`,
         color: '#59A10D',
         iconUrl: successIcon,
@@ -47,6 +48,7 @@ form.addEventListener('submit', event => {
     .catch(() => {
       showPopup({
         ...popupOption,
+        title: 'Error',
         message: `Rejected promise in ${userValue}ms`,
         color: '#EF4040',
         iconUrl: errorIcon,
