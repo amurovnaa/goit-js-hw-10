@@ -22,9 +22,7 @@ form.addEventListener('submit', event => {
 
   const userValue = Number(form.querySelector('input[name="delay"]').value);
   const selectedValue = form.querySelector('input[name="state"]:checked').value;
-
   const shouldResolve = selectedValue === 'fulfilled';
-
   const popupOption = {
     titleSize: '16px',
     messageSize: '16px',
